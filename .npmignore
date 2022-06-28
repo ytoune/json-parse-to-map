@@ -1,0 +1,10 @@
+/.vscode
+/.editorconfig
+/.eslintignore
+/.eslintrc.yml
+/.yarnrc
+/src
+/scripts
+/tsconfig.json
+/yarn.lock
+/dist/scripts
