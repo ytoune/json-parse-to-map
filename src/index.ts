@@ -13,7 +13,7 @@ export type ReadonlyJSONValue =
 
 export const stringify = (value: ReadonlyJSONValue): string =>
 	JSON.stringify(value, (_, v: unknown) =>
-		v instanceof Map ? Object.fromEntries([...v]) : v,
+		v instanceof Map ? Object.fromEntries(v) : v,
 	)
 
 export const parse = (text: string): JSONValue =>
